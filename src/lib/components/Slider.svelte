@@ -5,7 +5,7 @@
 	let show = true;
 	let options = {duration: 1000, easing: linear};
     let currentIndex = 0;
-    let skills = ["Web Development", "Mobile development", "Desktop Development"];
+    let skills = ["Web Development", "Mobile Development", "Desktop Development"];
     onMount(() => {
     const interval = setInterval(() => {
       show = !show;
@@ -23,11 +23,15 @@
         height: 'max-content';
         min-height: 40px;
         overflow: hidden;
+        background: linear-gradient(to left, var(--primary-color), var(--background-color));
     }
     .slide {
         width: 100%;
         text-align: center;
-        font-size: 2em;
+        color: var(--background-color);
+        font-size: 2em; /* Adjust the size as needed */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+
     }
 </style>
 <div class="slide-container center-all">

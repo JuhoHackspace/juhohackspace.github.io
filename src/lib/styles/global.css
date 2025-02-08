@@ -31,19 +31,3 @@
 .page-container a {
     text-decoration: none;
 }
-
-.page-container h1 {
-    color: var(--text-color);
-}
-
-.page-container h2 {
-    color: var(--text-color);
-}
-
-.page-container h3 {
-    color: var(--text-color);
-}
-
-.page-container p {
-    color: var(--text-color);
-}
