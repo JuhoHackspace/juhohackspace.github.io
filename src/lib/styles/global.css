@@ -50,7 +50,12 @@ time, mark, audio, video {
 .horizontal-layout {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     /*background-color: green;*/
+}
+
+.main-changing-layout {
+    display: flex;
 }
 
 .vertical-layout {
@@ -65,6 +70,7 @@ time, mark, audio, video {
     justify-content: flex-start;
 }
 
+
 .inner-2em {
     padding: 2em;
 }
@@ -78,7 +84,7 @@ time, mark, audio, video {
 }
 
 .max-width-600{
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -108,4 +114,37 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .main-changing-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .intro-text {
+        font-size: 1em;
+        padding: 1em;
+    }
+
+    .header {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .container {
+        padding: 1em;
+    }
 }

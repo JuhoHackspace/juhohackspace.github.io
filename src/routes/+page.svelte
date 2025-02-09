@@ -15,11 +15,14 @@
         font-style: italic;
         font-size: 1.5em;
         margin-top: 0.5em;
+        text-align: center;
     }
 </style>
 <div class="container">
-    <div class="horizontal-layout">
-        <img src={picture} alt="Placeholder" />
+    <div class="main-changing-layout">
+        <div class="image-container">
+            <img src={picture} alt="Placeholder" />
+        </div>
         <div class="vertical-layout max-width-600">
             <h1 class="header">Juho Hietala</h1>
             <h3 id="slogan">"Code with Passion, Deliver with Precision"</h3>
@@ -30,6 +33,7 @@
             <Skill title="Web Development" tags={["HTML","CSS","JavaScript","React","Svelte"]}/>
             <Skill title="Mobile Development" tags={["React Native","Kotlin"]}/>
             <Skill title="Desktop Development" tags={["Qt"]}/>
+            <Skill title="Database Management" tags={["MySQL","Postgre SQL"]}/>
         </div>
     </div>
 </div>
