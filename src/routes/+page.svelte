@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import picture from '$lib/assets/kuva.jpg';
+    import skills from '$lib/assets/skills.js';
     import Skill from '$lib/components/Skill.svelte';
 </script>
 <style>
@@ -37,11 +38,9 @@
                 I am a third-year ICT engineering student specializing in software development. As a problem solver and enthusiastic learner, I thrive on challenges and continuously seek to expand my knowledge. I am dedicated to searching, applying, and implementing innovative solutions.
                 I have worked on various projects, including web, mobile, and desktop applications. I am also interested in databases and have experience in creating and managing them. I am always eager to learn new technologies and improve my skills. I am looking for opportunities to work on exciting projects and collaborate with talented people.
             </p>
-            <Skill title="Web Development" tags={["HTML","CSS","JavaScript","React","Svelte"]}/>
-            <Skill title="Mobile Development" tags={["React Native","Kotlin"]}/>
-            <Skill title="Desktop Development" tags={["Qt"]}/>
-            <Skill title="Backend Development" tags={["Express","Java Springboot"]}/>
-            <Skill title="Database Management" tags={["MySQL","Postgre SQL"]}/>
+            {#each skills as skill}
+            <Skill title={skill.name} tags={skill.tags}/>
+            {/each}
         </div>
     </div>
 </div>
