@@ -14,9 +14,9 @@
     }
     #slogan {
         font-style: italic;
-        font-size: 1.5em;
         margin-top: 0.5em;
         text-align: center;
+        font-size: 1.5em;
     }
     @media (max-width: 768px) {
         img {
@@ -24,7 +24,7 @@
             max-width: 300px;
             margin: 0 auto;
         }
-    }
+    }   
 </style>
 <div class="container">
     <div class="main-changing-layout">
@@ -32,7 +32,7 @@
             <img src={picture} alt="Placeholder" />
         </div>
         <div class="vertical-layout max-width-600">
-            <h1 class="header">Juho Hietala</h1>
+            <h1 class="header name">Juho Hietala</h1>
             <h3 id="slogan">"Code with Passion, Deliver with Precision"</h3>
             <p class="intro-text inner-2em">
                 I am a third-year ICT engineering student specializing in software development. As a problem solver and enthusiastic learner, I thrive on challenges and continuously seek to expand my knowledge. I am dedicated to searching, applying, and implementing innovative solutions.

@@ -77,6 +77,10 @@ time, mark, audio, video {
     padding: 2em;
 }
 
+.inner-1em {
+    padding: 1em;
+}
+
 .outer-1em {
     margin: 1em;
 }
@@ -125,10 +129,6 @@ h2 {
     .intro-text {
         font-size: 1em;
         padding: 1em;
-    }
-
-    .header {
-        font-size: 1.5em;
     }
 
     h1 {

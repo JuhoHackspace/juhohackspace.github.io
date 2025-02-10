@@ -28,6 +28,8 @@
         cursor: pointer;
         font-size: 2rem;
         color: var(--text-color-1);
+        background-color: transparent;
+        border: none;
     }
     .transparent-bg {
         background-color: rgba(189, 195, 199, 0.8); /* Updated to use rgba with #A0A0A0 */
@@ -96,13 +98,13 @@
             <li><a href="/myWork" class={$currentPath === '/myWork' ? 'active' : ''}>My Work</a></li>
             <li><a href="/contact" class={$currentPath === '/contact' ? 'active' : ''}>Contact</a></li>
         </ul>
-        <div class="hamburger" on:click={toggleMenu}>
+        <button class="hamburger" on:click={toggleMenu}>
             {#if showMenu}
             &#10006; <!-- Close icon -->
             {:else}
             &#9776; <!-- Hamburger icon -->
             {/if}
-        </div>
+        </button>
     </nav>
     {#if showMenu}
         <div class="mobile-menu">
