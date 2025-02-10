@@ -12,6 +12,9 @@
       margin-right: 0.5em;
       border-radius: 0.5em;
     }
+    .tag {
+      margin-bottom: 0.5em;
+    }
   </style>
   
   <div class="vertical-layout max-width-600">

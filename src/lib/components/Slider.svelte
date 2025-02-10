@@ -13,7 +13,7 @@
     { name: "Web Development", logo: [] },
     { name: "Mobile Development", logo: [] },
     { name: "Desktop Development", logo: [] },
-    { name: "Database Development", logo: [] },
+    { name: "Database Management", logo: [] },
   ];
     let viewportWidth = 0;
     onMount(() => {
@@ -34,12 +34,13 @@
         height: 'max-content';
         min-height: 40px;
         overflow: hidden;
+        margin-top: 3.5em;
         background: linear-gradient(to left, var(--primary-color), var(--background-color));
     }
     .slide {
         width: 100%;
         text-align: center;
-        color: var(--background-color);
+        color: var(--text-color-1);
         font-size: 2em; /* Adjust the size as needed */
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
         background-color: transparent;
@@ -51,6 +52,11 @@
         margin-right: 10px;
         vertical-align: middle;
         background-color: transparent;
+    }
+    @media (max-width: 768px) {
+        .slide {
+            font-size: 1.5em;
+        }
     }
 </style>
 <div class="slide-container center-all">

@@ -1,7 +1,8 @@
 :root {
-    --primary-color: #000080;
+    --primary-color: #000060;
     --secondary-color: #2ecc71;
-    --background-color: #f9f9f9;
+    --background-color: #87CEFA;
+    --text-color-1: #f9f9f9;
     --text-color: #333333;
 }
 
@@ -94,18 +95,17 @@ time, mark, audio, video {
 
 .intro-text {
     font-size: 1.2em;
-    color: var(--background-color);
+    color: var(--text-color-1);
     text-align: center;
 }
 
 .header {
-    color: var(--background-color);
+    color: var(--text-color-1);
     font-weight: bold;
 }
 
 .text-container {
     max-width: 600px;
-    background-color: blue;
 }
 
 h1 {
@@ -116,17 +116,11 @@ h2 {
     font-size: 1.5em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .main-changing-layout {
         flex-direction: column;
         align-items: center;
     }
-    img {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
     .intro-text {
         font-size: 1em;
         padding: 1em;
@@ -138,13 +132,11 @@ h2 {
 
     h1 {
         font-size: 1.5em;
+        text-align: center;
     }
 
     h2 {
         font-size: 1.2em;
-    }
-
-    .container {
-        padding: 1em;
+        text-align: center;
     }
 }

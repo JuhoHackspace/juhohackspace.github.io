@@ -17,6 +17,13 @@
         margin-top: 0.5em;
         text-align: center;
     }
+    @media (max-width: 768px) {
+        img {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
 </style>
 <div class="container">
     <div class="main-changing-layout">
@@ -33,6 +40,7 @@
             <Skill title="Web Development" tags={["HTML","CSS","JavaScript","React","Svelte"]}/>
             <Skill title="Mobile Development" tags={["React Native","Kotlin"]}/>
             <Skill title="Desktop Development" tags={["Qt"]}/>
+            <Skill title="Backend Development" tags={["Express","Java Springboot"]}/>
             <Skill title="Database Management" tags={["MySQL","Postgre SQL"]}/>
         </div>
     </div>
