@@ -34,7 +34,7 @@
     .slide-container {
         width: 100%;
         height: 'max-content';
-        min-height: 40px;
+        min-height: 50px;
         overflow: hidden;
         margin-top: 3.5em;
         background: linear-gradient(to left, var(--primary-color), var(--background-color));

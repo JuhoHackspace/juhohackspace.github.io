@@ -7,13 +7,14 @@
   <style>
     .tag {
       background-color: var(--primary-color);
-      color: var(--background-color);
+      color: var(--text-color-1);
       padding: 0.5em;
       margin-right: 0.5em;
       border-radius: 0.5em;
     }
     .tag {
       margin-bottom: 0.5em;
+      font-weight: bold;
     }
   </style>
   

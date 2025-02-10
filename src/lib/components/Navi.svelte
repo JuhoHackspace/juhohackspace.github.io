@@ -30,7 +30,7 @@
         color: var(--text-color-1);
     }
     .transparent-bg {
-        background-color: rgba(0, 0, 96, 0.8);
+        background-color: rgba(189, 195, 199, 0.8); /* Updated to use rgba with #A0A0A0 */
     }
     .nav-container {
         position: fixed;

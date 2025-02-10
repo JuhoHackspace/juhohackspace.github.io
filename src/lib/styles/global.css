@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #000060;
+    --primary-color: #bdc3c7;
     --secondary-color: #2ecc71;
-    --background-color: #87CEFA;
-    --text-color-1: #f9f9f9;
+    --background-color: #ecf0f1;
+    --text-color-1: ##2c3e50;
     --text-color: #333333;
 }
 
@@ -22,6 +22,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    line-height: 1.5;
 }
 
 .page-container {
@@ -33,7 +34,7 @@ time, mark, audio, video {
     flex-direction: column;
     min-height: 100vh;
     height: 'max-content';
-    background: linear-gradient(to left, var(--primary-color), var(--background-color));;
+    background: linear-gradient(to left, var(--primary-color), var(--background-color));
 }
 
 .center-all {
