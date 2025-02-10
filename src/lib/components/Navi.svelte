@@ -80,16 +80,12 @@
       flex-direction: column;
       gap: 1rem;
       padding: 1rem;
-      position: absolute;
-      top: 58px; /* Adjust based on your header height */
-      right: 0;
       width: 100%;
     }
     .mobile-menu a {
       color: var(--text-color-1);
       text-decoration: none;
       font-size: 1.2rem;
-      margin-left: 1.5em;
     }
   }
   </style>
@@ -109,7 +105,7 @@
         </div>
     </nav>
     {#if showMenu}
-        <div class="mobile-menu transparent-bg">
+        <div class="mobile-menu">
             <a href="/" class={$currentPath === '/' ? 'active' : ''} on:click={toggleMenu}>Who am I?</a>
             <a href="/myWork" class={$currentPath === '/myWork' ? 'active' : ''} on:click={toggleMenu}>My Work</a>
             <a href="/contact" class={$currentPath === '/contact' ? 'active' : ''} on:click={toggleMenu}>Contact</a>
