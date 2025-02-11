@@ -1,11 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { backInOut, linear } from 'svelte/easing';
-	import {blur, fade, fly, scale, slide} from 'svelte/transition';
-    import cssLogo from '$lib/assets/css.webp';
-    import htmlLogo from '$lib/assets/html5.png';
-    import jsLogo from '$lib/assets/js.webp';
-    import webLogo from '$lib/assets/web.jpg';
+	import {fly} from 'svelte/transition';
     import skills from '$lib/assets/skills.js';
 	let show = true;
 	let options = {duration: 1000, easing: linear};

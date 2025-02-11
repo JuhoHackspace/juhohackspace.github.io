@@ -5,12 +5,20 @@
     export let videoURI = ''; // Optional YouTube video URI
     export let availableOn = [];
 
+    let currentImageIndex = 0;
+    
     function openLink(url) {
         window.open(url, '_blank');
     }
+    
     import githubLogo from '$lib/assets/GitHub2.png';
     import webLogo from '$lib/assets/Web2.png';
     import Muuvit from '$lib/assets/Muuvit.png';
+    import Huiputin1 from '$lib/assets/Huiputin1.jpg';
+    import Huiputin2 from '$lib/assets/Huiputin2.jpg';
+    import Huiputin3 from '$lib/assets/Huiputin3.jpg';
+    import Huiputin4 from '$lib/assets/Huiputin4.jpg';
+    import Huiputin5 from '$lib/assets/Huiputin5.jpg';
 
     // Map platform names to imported images
     const platformLogos = {
@@ -18,26 +26,38 @@
         Web: webLogo
     };
     const pictures = {
-        Muuvit: Muuvit
+        Muuvit: Muuvit,
+        Huiputin1: Huiputin1,
+        Huiputin2: Huiputin2,
+        Huiputin3: Huiputin3,
+        Huiputin4: Huiputin4,
+        Huiputin5: Huiputin5
     };
+
+    function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + imageURI.length) % imageURI.length;
+    }
+
+    function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % imageURI.length;
+    }
 </script>
 <style>
     .card-container {
-        background-color: var(--background-color-1);
+        background-color: var(--background-color2);
         border-radius: 0.5em;
         box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
-        margin: 1em;
         transition: transform 0.3s, box-shadow 0.3s;
         max-width: 400px;
         min-width: 300px;
-        min-height: 600px;
+        min-height: 650px;
     }
     .card-container:hover {
         transform: translateY(-10px);
         box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
     }
-    .description {
-        min-height: 200px;
+    .bottom {
+        margin-top: auto;
     }
     @media (max-width: 640px) {
         .card-container {
@@ -61,6 +81,28 @@
     .video-picture-container img {
         width: 100%;
         height: auto;
+        max-height: 200px;
+        object-fit: contain;
+    }
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5em;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+    .button-container button {
+        background-color: var(--background-color2);
+        color: var(--text-color-1);
+        border: none;
+        border-radius: 0.5em;
+        padding: 0.5em;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+    .button-container button:hover {
+        background-color: var(--primary-color);
     }
     .transparent {
         background: transparent;
@@ -72,10 +114,11 @@
         cursor: pointer;
         image-rendering: transparent;
     }
+
 </style>
-<div class="card-container inner-1em">
-    <div class="vertical-layout">
-        <div class="container">
+<div class="vertical-layout card-container outer-1em">
+    <div class="container vertical-layout">
+        <div class="inner-1em">
             <h2 class="header">{title}</h2>
         </div>
         {#if videoURI}
@@ -84,10 +127,18 @@
         </div>
         {:else}
         <div class="video-picture-container">
-            <img src={pictures[imageURI]} alt={title} />
+            {#if imageURI.length > 0}
+                <img src={pictures[imageURI[currentImageIndex]]} alt={title} />
+                {#if imageURI.length > 1}
+                    <div class="button-container">
+                        <button class="slider-button left" on:click={prevImage}>&lt;</button>
+                        <button class="slider-button right" on:click={nextImage}>&gt;</button>
+                    </div>
+                {/if}
+            {/if}
         </div>
         {/if}
-        <div class="container description">
+        <div class="container">
             <p>{description}</p>
         </div>
         {#if availableOn.length > 0}

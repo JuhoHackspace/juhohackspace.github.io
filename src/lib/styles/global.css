@@ -2,6 +2,7 @@
     --primary-color: #bdc3c7;
     --secondary-color: #2ecc71;
     --background-color: #ecf0f1;
+    --background-color2: #d5dadc;
     --text-color-1: ##2c3e50;
     --text-color: #333333;
 }
@@ -63,7 +64,6 @@ time, mark, audio, video {
 .vertical-layout {
     display: flex;
     flex-direction: column;
-    align-items: center;
     /*background-color: yellow;*/
 }
 
@@ -94,6 +94,9 @@ time, mark, audio, video {
     margin: 0 auto;
 }
 
+.height-100 {
+    height: 100%;
+}
 .page-container a {
     text-decoration: none;
 }

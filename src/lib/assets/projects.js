@@ -33,7 +33,7 @@ const projects = [
                      This full-stack app allows users to search for movies and TV shows, create groups, post content, and share favorite lists. \
                      Users can also find and post movie screenings from Finnish cinemas. The UI was built with React, and the backend with Java Springboot. \
                      The database uses PostgreSQL with an ORM model.",
-        imageURI: "Muuvit",
+        imageURI: ["Muuvit"],
         availableOn: [
             {
                 name: "GitHub",
@@ -42,6 +42,21 @@ const projects = [
             {
                 name: "Web",
                 url: "https://muuvit-dbml.onrender.com/"
+            }
+        ]
+    },
+    {
+        name: "Project Huiputinpaivakirja",
+        description: "Huiputinpaivakirja is a mobile application that we built as the last group application project in the end of the \
+                      second year of ICT studies at Oulu University of Applied Sciences. It is a bouldering journal and a tracking tool tailored \
+                      for climbers. This demo version was built for the old bouldering hall at OKK (Oulu Climbing Centre). The application relies \
+                      on user managed content. Users create and photograph new routes, vote for grades, and ultimately for the deletion of old routes. \
+                      The app keeps track of climbed routes and grades. The app was created with React Native and Firebase.",
+        imageURI: ["Huiputin1", "Huiputin2", "Huiputin3", "Huiputin4", "Huiputin5"],
+        availableOn: [
+            {
+                name: "GitHub",
+                url: "https://github.com/JuhoHackspace/MyProjects/tree/main/2025-Q4-HuiputinPaivakirja"
             }
         ]
     }
