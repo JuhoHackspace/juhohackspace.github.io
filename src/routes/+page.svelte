@@ -5,10 +5,15 @@
     import Skill from '$lib/components/Skill.svelte';
 </script>
 <style>
+    .image-container {
+        display: flex;
+        width: 50%;
+        height: 70vh;
+        justify-content: center;
+    }
     img {
-        width: 400px;
+        width: auto;
         height: auto;
-        max-height: 600px;
         border-radius: 50%;
         margin-left: 1em;
     }
@@ -18,11 +23,18 @@
         text-align: center;
         font-size: 1.5em;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
+        .image-container {
+            width: 100%;
+            height: 50vh;
+        }
         img {
             width: 100%;
             max-width: 300px;
             margin: 0 auto;
+        }
+        .name {
+            margin-top: 1em;
         }
     }   
 </style>

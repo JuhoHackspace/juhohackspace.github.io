@@ -30,7 +30,7 @@
         transition: transform 0.3s, box-shadow 0.3s;
         max-width: 400px;
         min-width: 300px;
-        min-height: 500px;
+        min-height: 600px;
     }
     .card-container:hover {
         transform: translateY(-10px);
