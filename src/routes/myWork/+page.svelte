@@ -3,9 +3,10 @@
     import projects from "$lib/assets/projects.js";
 </script>
 <div class="container">
-    <h1 class="header outer-1em text-center">My Projects</h1>
+    {#each projects as group}
+    <h1 class="header outer-1em text-center">{group.group}</h1>
     <div class="horizontal-layout center-all">
-        {#each projects as project}
+        {#each group.projects as project}
         <ProjectCard title={project.name} 
                      description={project.description} 
                      videoURI={project.videoURI}
@@ -14,4 +15,5 @@
         />
         {/each}
     </div>
+    {/each}
 </div>

@@ -97,7 +97,6 @@
         <ul>
             <li><a href="/" class={$currentPath === '/' ? 'active' : ''}>Who am I?</a></li>
             <li><a href="/myWork" class={$currentPath === '/myWork' ? 'active' : ''}>My Work</a></li>
-            <li><a href="/contact" class={$currentPath === '/contact' ? 'active' : ''}>Contact</a></li>
         </ul>
         <button class="hamburger" on:click={toggleMenu}>
             {#if showMenu}
@@ -111,7 +110,6 @@
         <div class="mobile-menu">
             <a href="/" class={$currentPath === '/' ? 'active' : ''} on:click={toggleMenu}>Who am I?</a>
             <a href="/myWork" class={$currentPath === '/myWork' ? 'active' : ''} on:click={toggleMenu}>My Work</a>
-            <a href="/contact" class={$currentPath === '/contact' ? 'active' : ''} on:click={toggleMenu}>Contact</a>
         </div>
     {/if}
 </div>

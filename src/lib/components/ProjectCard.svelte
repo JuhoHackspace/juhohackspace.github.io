@@ -19,6 +19,7 @@
     import Huiputin3 from '$lib/assets/Huiputin3.jpg';
     import Huiputin4 from '$lib/assets/Huiputin4.jpg';
     import Huiputin5 from '$lib/assets/Huiputin5.jpg';
+    import LearningJavaScript from '$lib/assets/LearningJavaScript.jpg';
 
     // Map names to imported resources
     const platformLogos = {
@@ -31,7 +32,8 @@
         Huiputin2: Huiputin2,
         Huiputin3: Huiputin3,
         Huiputin4: Huiputin4,
-        Huiputin5: Huiputin5
+        Huiputin5: Huiputin5,
+        LearningJavaScript: LearningJavaScript
     };
 
     function prevImage() {
@@ -56,9 +58,6 @@
         transform: translateY(-10px);
         box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
     }
-    .bottom {
-        margin-top: auto;
-    }
     @media (max-width: 640px) {
         .card-container {
             margin: 1em auto;
@@ -70,7 +69,7 @@
         }
     }
     .video-picture-container {
-        margin-top: 1em;
+        margin: 1em auto;
         width: 100%;
         height: 0;
         padding-bottom: 56.25%; /* 16:9 aspect ratio */
