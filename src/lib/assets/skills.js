@@ -18,6 +18,10 @@ const skills = [
     {
         name: "Desktop Development",
         tags: ["Qt"]
+    },
+    {
+        name: "Embedded Systems",
+        tags: ["Arduino"]
     }
 ];
 
