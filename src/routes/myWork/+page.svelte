@@ -3,7 +3,7 @@
     import projects from "$lib/assets/projects.js";
 </script>
 <div class="container">
-    <h1 class="header outer-1em">My Projects</h1>
+    <h1 class="header outer-1em text-center">My Projects</h1>
     <div class="horizontal-layout center-all">
         {#each projects as project}
         <ProjectCard title={project.name} 

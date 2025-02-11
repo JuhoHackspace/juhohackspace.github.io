@@ -1,7 +1,7 @@
 <script>
     export let title;
     export let description;
-    export let imageURI = ''; // Optional image URI
+    export let imageURI = []; // Optional image URI
     export let videoURI = ''; // Optional YouTube video URI
     export let availableOn = [];
 
@@ -20,7 +20,7 @@
     import Huiputin4 from '$lib/assets/Huiputin4.jpg';
     import Huiputin5 from '$lib/assets/Huiputin5.jpg';
 
-    // Map platform names to imported images
+    // Map names to imported resources
     const platformLogos = {
         GitHub: githubLogo,
         Web: webLogo
@@ -62,6 +62,11 @@
     @media (max-width: 640px) {
         .card-container {
             margin: 1em auto;
+        }
+    }
+    @media (min-width: 1500px) {
+        .card-container {
+            min-height: 800px;
         }
     }
     .video-picture-container {
@@ -119,7 +124,7 @@
 <div class="vertical-layout card-container outer-1em">
     <div class="container vertical-layout">
         <div class="inner-1em">
-            <h2 class="header">{title}</h2>
+            <h2 class="header text-center">{title}</h2>
         </div>
         {#if videoURI}
         <div class="video-picture-container">
@@ -138,7 +143,7 @@
             {/if}
         </div>
         {/if}
-        <div class="container">
+        <div class="container text-center">
             <p>{description}</p>
         </div>
         {#if availableOn.length > 0}

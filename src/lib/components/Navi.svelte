@@ -64,6 +64,7 @@
     .header-nav a:hover, .active {
         font-weight: 900;
     }
+
     @media (max-width: 460px) {
     .header-nav {
         justify-content: flex-end;

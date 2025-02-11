@@ -20,7 +20,6 @@
     #slogan {
         font-style: italic;
         margin-top: 0.5em;
-        text-align: center;
         font-size: 1.5em;
     }
     @media (max-width: 900px) {
@@ -43,7 +42,7 @@
         <div class="image-container">
             <img src={picture} alt="Placeholder" />
         </div>
-        <div class="vertical-layout max-width-600">
+        <div class="vertical-layout max-width-600 text-center">
             <h1 class="header name">Juho Hietala</h1>
             <h3 id="slogan">"Code with Passion, Deliver with Precision"</h3>
             <p class="intro-text inner-2em">

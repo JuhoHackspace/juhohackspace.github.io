@@ -104,12 +104,14 @@ time, mark, audio, video {
 .intro-text {
     font-size: 1.2em;
     color: var(--text-color-1);
-    text-align: center;
 }
 
 .header {
     color: var(--text-color-1);
     font-weight: bold;
+}
+
+.text-center {
     text-align: center;
 }
 
