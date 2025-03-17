@@ -102,6 +102,26 @@ const projects = [
                         url: "https://github.com/JuhoHackspace/MyProjects/tree/main/Final-Project-Mobile-Programming-With-Native-Technologies"
                     }
                 ]
+            },
+            {
+                name: "GeoNotes",
+                description: "GeoNotes is a personal project, that I created to demonstrate my skills in creating a Progressive Web Application (PWA). \
+                            The app is a simple map application, that allows users to add and remove locations on the map.\
+                            The user places a marker on the map and provides a description for the location. The locations are stored in a Firestore database. \
+                            The beauty of the application is that is works seamlessly in online and offline modes. It is platform independent and can be installed on \
+                            any device that has a modern web browser. The app utilizes a service worker and uses cache to store map images and queue user interactions in offline mode. \
+                            The architecrure has three layers, a React frontend and a Node.js Express REST API both hosted on Render.com, and a Google Firestore database.",
+                imageURI: ["PWA_1", "PWA_2", "PWA_3", "PWA_4", "PWA_5"],
+                availableOn: [
+                    {
+                        name: "GitHub",
+                        url: "https://github.com/JuhoHackspace/PWADemo.git"
+                    },
+                    {
+                        name: "Web",
+                        url: "https://geonotes.onrender.com"
+                    }
+                ]
             }
         ]
     }

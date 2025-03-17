@@ -19,6 +19,11 @@
     import Huiputin3 from '$lib/assets/Huiputin3.jpg';
     import Huiputin4 from '$lib/assets/Huiputin4.jpg';
     import Huiputin5 from '$lib/assets/Huiputin5.jpg';
+    import PWA_1 from '$lib/assets/PWA_1.jpg';
+    import PWA_2 from '$lib/assets/PWA_2.jpg';
+    import PWA_3 from '$lib/assets/PWA_3.jpg';
+    import PWA_4 from '$lib/assets/PWA_4.jpg';
+    import PWA_5 from '$lib/assets/PWA_5.jpg';
     import LearningJavaScript from '$lib/assets/LearningJavaScript.jpg';
 
     // Map names to imported resources
@@ -33,6 +38,11 @@
         Huiputin3: Huiputin3,
         Huiputin4: Huiputin4,
         Huiputin5: Huiputin5,
+        PWA_1: PWA_1,
+        PWA_2: PWA_2,
+        PWA_3: PWA_3,
+        PWA_4: PWA_4,
+        PWA_5: PWA_5,
         LearningJavaScript: LearningJavaScript
     };
 
@@ -52,7 +62,7 @@
         transition: transform 0.3s, box-shadow 0.3s;
         max-width: 400px;
         min-width: 300px;
-        min-height: 800px;
+        min-height: 850px;
     }
     .card-container:hover {
         transform: translateY(-10px);

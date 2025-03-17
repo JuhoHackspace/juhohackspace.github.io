@@ -1,7 +1,7 @@
 const skills = [
     {
         name: "Web Development",
-        tags: ["HTML", "CSS", "JavaScript", "React", "Svelte"]
+        tags: ["HTML", "CSS", "JavaScript", "React", "Svelte", "PWA"]
     },
     {
         name: "Backend Development",
